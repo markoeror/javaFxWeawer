@@ -11,7 +11,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
-@FxmlView // equal to: @FxmlView("MainController.fxml")
+@FxmlView("MainController.fxml")
 public class MainController {
 
     private final String greeting;
@@ -47,7 +47,7 @@ public class MainController {
 */
         openSimpleDialogButton.setOnAction(
                 actionEvent ->{
-                    dialog.getController().setName("Marko");
+                    dialog.getController().setName("Marko Eror");
                     dialog.getController().show();
                 }
 

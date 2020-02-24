@@ -8,9 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationListener;
 import org.springframework.stereotype.Component;
 
-/**
- * @author <a href="mailto:rene.gielen@gmail.com">Rene Gielen</a>
- */
+
 @Component
 public class PrimaryStageInitializer implements ApplicationListener<StageReadyEvent> {
 
