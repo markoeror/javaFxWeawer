@@ -1,12 +1,54 @@
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-<VBox xmlns:fx="http://javafx.com/fxml" spacing="10" alignment="CENTER"
-      fx:controller="com.eror.springboot.controller.MainController">
+<?xml version="1.0" encoding="UTF-8"?>
 
-    <Button fx:id="helloButton" text="Say Hello!"/>
-    <Label fx:id="label"/>
-    <Button fx:id="openSimpleDialogButton" text="Open Simple Dialog"/>
-    <Button fx:id="openTiledDialogButton" text="Open Tiled Dialog"/>
+<!--<VBox alignment="CENTER" prefHeight="600.0" prefWidth="800.0" spacing="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.eror.springboot.controller.MainController">-->
+<!--   <Pane prefHeight="444.0" prefWidth="500.0">-->
+<!--       <Label fx:id="lblLogin" layoutX="97.0" layoutY="46.0" text="Login" textFill="WHITE">-->
+<!--           <font>-->
+<!--               <Font size="20.0" />-->
+<!--           </font>-->
+<!--       </Label>-->
+<!--       <TextField fx:id="username" layoutX="98.0" layoutY="92.0" prefHeight="36.0" prefWidth="204.0" promptText="Username" />-->
+<!--       <PasswordField fx:id="password" layoutX="98.0" layoutY="141.0" prefHeight="36.0" prefWidth="204.0" promptText="Password" />-->
+<!--       <Button fx:id="loginButton" layoutX="215.0" layoutY="193.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="86.0" styleClass="btnGreen" text="Sign In" textFill="WHITE">-->
+<!--           <font>-->
+<!--               <Font size="15.0" />-->
+<!--           </font>-->
+<!--           <effect>-->
+<!--               <DropShadow blurType="ONE_PASS_BOX" />-->
+<!--           </effect></Button>-->
+<!--   </Pane>-->
+<!--    -->
+<!--</VBox>-->
 
-</VBox>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<AnchorPane stylesheets="@../../../../styles/Styles.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.eror.springboot.controller.MainController">
+    <children>
+        <Rectangle fill="DODGERBLUE" height="250.0" stroke="#ffffff8b" strokeType="INSIDE" width="400.0" />
+        <Label fx:id="lblLogin" layoutX="97.0" layoutY="46.0" text="Login" textFill="WHITE">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="username" layoutX="98.0" layoutY="92.0" prefHeight="36.0" prefWidth="204.0" promptText="Username" />
+        <PasswordField fx:id="password" layoutX="98.0" layoutY="141.0" prefHeight="36.0" prefWidth="204.0" promptText="Password" />
+        <Button fx:id="loginButton" layoutX="215.0" layoutY="193.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="86.0" styleClass="btnGreen" text="Sign In" textFill="WHITE">
+            <font>
+                <Font size="15.0" />
+            </font>
+            <effect>
+                <DropShadow blurType="ONE_PASS_BOX" />
+            </effect></Button>
+        <Button fx:id="helloButton" layoutX="147.0" layoutY="17.0" text="Say Hello!" />
+        <Label fx:id="label" />
+        <Button fx:id="openSimpleDialogButton" layoutX="253.0" layoutY="61.0" text="Open Simple Dialog" />
+        <Button fx:id="openTiledDialogButton" layoutX="258.0" layoutY="17.0" text="Open Tiled Dialog" AnchorPane.topAnchor="17.0" />
+    </children>
+    <opaqueInsets>
+        <Insets />
+    </opaqueInsets>
+</AnchorPane>
